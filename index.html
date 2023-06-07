@@ -7,48 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./utilitise/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     
 </head>
 
 <body>
     <header>
-        <div class="logo_container">
-            <a class="joined" id="join" href="#">JOIN US</a>
-           <a class="butt" id="butto0n" href="#">open it</a>
-            <h4 class="logo"> The universe has a message</h4>
+        <div class="main">
+            <div class="container row">
+                <div class="logo_container col-md-3">
+                    <a class="joined btn" id="join" href="#">JOIN US</a>
+                   <a class="butt btn" id="butto0n" href="#">open it</a>
+                    <p class="logo"> The universe has a message</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav justify-content-center" >
+                        <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                  </ul>
+                </div>
+                <div class="mode col-md-3">
+                   
+                    <div class="svg">
+                        <div class="mode">
+                        <h1 class="lighton">Light mode on</h1>
+                    <h1 class="darkon">Dark mode on</h1>
+                </div>
+                    <svg 
+                    id="Darkmode"
+                    width="36" 
+                    height="36" 
+                    viewBox="0 0 56 56" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        class="sun"
+                        d="M56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28Z" fill="#F5D422"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
-            <div class="dropdown">
-                <button class="home" ><a class="home" href="#">Home</a> </button>
-                <button class="contact"><a class="contact" href="">Contact Us</a></button>
-                <div class="information">
-                    <button class="info">Information</button>
-                    <ul>
-                        <li><a href="#">Article</a></li>
-                        <li><a href="#">Podcasts</a></li>
-                        <li><a href="#">Qoutes</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="cart">
-                </div>
-                <div class="svg">
-                    <div class="mode">
-                    <h1 class="lighton">Light mode on</h1>
-                <h1 class="darkon">Dark mode on</h1>
-            </div>
-                <svg 
-                id="Darkmode"
-                width="56" 
-                height="56" 
-                viewBox="0 0 56 56" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg">
-                    <path
-                    class="sun"
-                    d="M56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28Z" fill="#F5D422"/>
-                    </svg>
-                </div>
+       
+          
+     
     </header>
 
     <main>
