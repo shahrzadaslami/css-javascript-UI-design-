@@ -175,10 +175,23 @@ width: 1cm;
 .presentation {
     
     display: flex;
-    width: 90%;
-    margin: auto;
-    min-height: 80vh;
-    align-items: center;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:space-between;
+        .cover{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content:center; 
+            text-align: center;
+        }
+    }
+
 }
 .introduction{
     flex: 1;
@@ -223,18 +236,13 @@ width: 1cm;
     margin: 30px 0px 0px 30pxn 
 }
 
-.cover{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    height: 50vh;
-
-}
 
 .cover img {
-height: 100%;
-align-content: left; 
-animation: drop 1.5s ease;
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    align-content: left; 
+    animation: drop 1.5s ease;
 
 }
 .big-circ{
